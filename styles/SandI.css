@@ -514,6 +514,16 @@ p{
     transform: rotate(180deg);
 }
 
+.buttonClickable:active{
+    transform: scale(0.95);
+    opacity: 0.8;
+}
+
+.buttonClickable:hover:not(:active){
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
 #GamingSectionNavLeft:hover, #GamingSectionNavRight:hover {
     cursor: pointer;
 }
