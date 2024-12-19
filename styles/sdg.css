@@ -1,0 +1,481 @@
+html{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    align-items: center;
+}
+
+* {
+    outline:none;
+}
+
+body{
+    overflow-x: hidden;
+    height: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    gap: 100px;
+    position: relative;
+}
+
+a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+    display: inline-flex;
+}
+
+.Heading1{
+    font-size: 4.5rem;
+    line-height: 5.85rem;
+    letter-spacing: -0.09rem;
+    font-weight: 700;
+    font-family: "Inter-Bold", sans-serif;
+}
+
+.Heading2 {
+    font-size: 3.125rem;
+    color: white;
+    line-height: 110%;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    letter-spacing: -2%;
+    text-transform: capitalize;
+}
+
+.Subheading{
+    font-size: 1.125rem;
+    color: #11aff9;
+    line-height: 150%;
+    font-family: "Inter", sans-serif;;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.BodyHero{
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    letter-spacing: 0;
+    font-weight: 600;
+    font-family: "Inter-Regular", sans-serif;
+    margin: 0;
+}
+
+.BlueText{
+    color: #11AFF9;
+}
+
+.BodyText{
+    font-size: 1.125rem;
+    color: white;
+    font-family: "Inter", sans-serif;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+#RectangleDesignBottom {
+    background: linear-gradient(
+        90deg,
+        rgba(189, 0, 255, 1) 0%,
+        rgba(0, 5, 255, 1) 100%
+    );
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 0px;
+    filter: blur(72.65px);
+}
+
+.circleDesign{
+    display: flex;
+    border-radius: 50%;
+    opacity: 0.2;
+    width: 522px;
+    height: 522px;
+    position: absolute;
+    filter: blur(300px);
+    z-index: -10;
+}
+
+#cd1{
+    background: #11aff9;
+    left: -20%;
+    top: 80%;
+}
+
+#cd2{
+    background: rgba(250, 255, 251, 0.82);
+    right: -20%;
+    top: 60%;
+}
+
+#cd3{
+    background: #1ab6c7;
+    left: -20%;
+    top: 40%;
+}
+
+#cd4{
+    background: #ae75c2;
+    right: -20%;
+    top: 20%;
+}
+
+#TopSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#NavigationSection {
+    margin: 50px 0px;
+    width: 86.458%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#TroyLogoNav {
+    border-radius: 36px;
+    flex-shrink: 0;
+    width: 4.6875rem;
+    height: 4.6875rem;
+    object-fit: cover;
+}
+
+#NavBar {
+    display: flex;
+    gap: 2.875rem;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+#NavLinkSelected {
+    color: #11aff9;
+    font-family: "Inter-Bold", sans-serif;
+    transform: scale(1.2) translateY(-1px);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.NavLink {
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    font-weight: 400;
+    opacity: 0.8;
+    color: white;
+} 
+
+.NavLink:active {
+    color: white;
+}
+
+#HeroBannerSection{
+    background-image: url("../images/sdgPics/sdgBanner.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 320px;
+    padding: 85px 0px 0px 44.31%;
+    justify-content: flex-start;
+}
+
+#bannerContent{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#bannerContentSub, #bannerContentTitle{
+    white-space: pre;
+}
+
+.Section{
+    box-shadow: 5px 5px 35px #00000040;
+}
+
+#WhatSection{
+    background-image: url(../images/sdgPics/WhatSectionBg.jpg);
+    background-position: center;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#WhatSectionContent{
+    width: 86.53%;
+    height: 47.83%;
+}
+
+#WSCText{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#WSCTextBody{
+    column-count: 2;
+    column-gap: 100px;
+}
+
+#OnceUponATimeSection{
+    width: 100%;
+    height: 1319px;
+    background: linear-gradient(
+        -1.3deg,
+        rgba(119, 119, 119, .05) 20%,
+        rgba(170, 170, 170, .05) 40%,
+        rgba(187, 187, 187, .05) 60%,
+        rgba(204, 204, 204, .05) 80%,
+        rgba(238, 238, 238, .05) 100%
+    );
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#OnceUponATimeSectionContent{
+    width: 86.53%;
+    height: 87.57%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+#OUATSCTopContent, #OUATSCBottomContent{
+    width: 100%;
+    height: 45.45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#OUATSCTopContentImage{
+    height: 100%;
+    width: 49.48%;
+
+}
+
+#OUATSCTopContentTextBody, #OUATSCBottomContentTextBody{
+    width: 100%;
+    height: 62.77%;
+    overflow: auto;
+}
+
+#OUATSCTopContentText, #OUATSCBottomContentText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 42.17%;
+    height: 78.29%;
+    gap: 10px;
+    padding-right: 10px;
+}
+
+.customScroll::-webkit-scrollbar{
+    width: 15px;
+    background-color: #252835;
+    border-radius: 10px;
+}
+
+.customScroll::-webkit-scrollbar-thumb {
+    background-color: #484D64;;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-clip: content-box;
+}
+
+#CallToActionSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 86.6%;
+    background: none;
+    border-radius: 25px;
+    position: relative;
+}
+
+#CallToActionSection::before{
+    background-image: url("../images/sdgPics/callToActionPic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 25px;
+    opacity: 0.5;
+}
+
+#CallToActionSectionContent{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    height: 73.51%;
+    width: 54.27%;
+}
+
+#CTASCTextTitle{
+    text-align: center;
+}
+
+#CTASCText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#CTASCButton{
+    font-size: 15px;
+    width: 40.63%;
+    height: 24.83%;
+    background: linear-gradient(
+        90deg,
+        #5D00D6 0%,
+        #00AEFF 100%
+    );
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#CTASCButton{
+    cursor: pointer;
+}
+
+#CTASCButton:active{
+    transform: scale(0.95);
+    opacity: 0.8;
+}
+
+#CTASCButton:hover:not(:active){
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+#FooterSection {
+    background: linear-gradient(
+        90deg,
+        rgba(119, 119, 119, 0.05) 0%,
+        rgba(170, 170, 170, 0.05) 20%,
+        rgba(187, 187, 187, 0.05) 40%,
+        rgba(170, 170, 170, 0.05) 60%,
+        rgba(238, 238, 238, 0.05) 80%
+    );
+    box-sizing: border-box;
+    padding: 52px 40px 40px 97px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    min-height: 600px;
+    position: relative;
+}
+#footerContent {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 105px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+#troyLogo2 {
+    border-radius: 123px;
+    flex-shrink: 0;
+    width: 255px;
+    height: 246px;
+    position: relative;
+    object-fit: cover;
+}
+#footerTexts {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 170px;
+    width: 100%;
+}
+.footerTextsSections {
+    display: inline-flex;
+    flex-direction: column;
+    height: 227px;
+    gap: 20px;
+}
+.footerTextsBodyBox{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    width: max-content;
+    opacity: .8;
+
+}
+.SubSections{
+    display: inline-flex;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+#footerBacktoTopButton {
+    width: 20px;
+    height: 20px;
+    border: solid #11AFF9 3px;
+    border-radius: 50%;
+    padding: 15px;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footerBackUpButtonImg{
+    width: 1em;
+    height: 1em;
+}
+#footerBacktoTopButton:hover{
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    right: 30px;
+    bottom: 30px;
+}
+#footerBacktoTopButton:hover #footerBackUpButtonImg{
+    width: 80%;
+    height: 80%;
+}

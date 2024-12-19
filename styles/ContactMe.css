@@ -1,0 +1,462 @@
+html{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    align-items: center;
+}
+
+* {
+    outline:none;
+}
+
+body{
+    overflow-x: hidden;
+    height: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    gap: 100px;
+    position: relative;
+}
+
+a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+    display: inline-flex;
+}
+
+.Heading1{
+    font-size: 4.5rem;
+    line-height: 5.85rem;
+    letter-spacing: -0.09rem;
+    font-weight: 700;
+    font-family: "Inter-Bold", sans-serif;
+}
+
+.Heading2 {
+    font-size: 3.125rem;
+    color: white;
+    line-height: 110%;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    letter-spacing: -2%;
+    text-transform: capitalize;
+}
+
+.Subheading{
+    font-size: 1.125rem;
+    color: #11aff9;
+    line-height: 150%;
+    font-family: "Inter", sans-serif;;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.BodyHero{
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    letter-spacing: 0;
+    font-weight: 600;
+    font-family: "Inter-Regular", sans-serif;
+    margin: 0;
+}
+
+.BlueText{
+    color: #11AFF9;
+}
+
+.BodyText{
+    font-size: 1.125rem;
+    color: white;
+    font-family: "Inter", sans-serif;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+#RectangleDesignBottom {
+    background: linear-gradient(
+        90deg,
+        rgba(189, 0, 255, 1) 0%,
+        rgba(0, 5, 255, 1) 100%
+    );
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 0px;
+    filter: blur(72.65px);
+}
+
+.circleDesign{
+    display: flex;
+    border-radius: 50%;
+    opacity: 0.2;
+    width: 522px;
+    height: 522px;
+    position: absolute;
+    filter: blur(300px);
+    z-index: -10;
+    pointer-events: none;
+}
+
+#cd1{
+    background: #11aff9;
+    left: -20%;
+    top: 80%;
+}
+
+#cd2{
+    background: rgba(250, 255, 251, 0.82);
+    right: -20%;
+    top: 60%;
+}
+
+#cd3{
+    background: #1ab6c7;
+    left: -20%;
+    top: 40%;
+}
+
+#cd4{
+    background: #ae75c2;
+    right: -20%;
+    top: 20%;
+}
+
+#TopSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#NavigationSection {
+    margin: 50px 0px;
+    width: 86.458%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#TroyLogoNav {
+    border-radius: 36px;
+    flex-shrink: 0;
+    width: 4.6875rem;
+    height: 4.6875rem;
+    object-fit: cover;
+}
+
+#NavBar {
+    display: flex;
+    gap: 2.875rem;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+#NavLinkSelected {
+    color: #11aff9;
+    font-family: "Inter-Bold", sans-serif;
+    transform: scale(1.2) translateY(-1px);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.NavLink {
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    font-weight: 400;
+    opacity: 0.8;
+    color: white;
+} 
+
+.NavLink:active {
+    color: white;
+}
+
+#HeroBannerSection{
+    background-image: url("../images/contactMePics/ContactMeBanner.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 320px;
+    padding: 85px 0px 0px 44.31%;
+    justify-content: flex-start;
+}
+
+#bannerContent{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#bannerContentSub, #bannerContentTitle{
+    white-space: pre;
+}
+
+.Section{
+    box-shadow: 5px 5px 35px #00000040;
+}
+
+#GetInTouchSection{
+    background: linear-gradient(
+        rgba(119, 119, 119, .05) 20%,
+        rgba(170, 170, 170, .05) 40%,
+        rgba(187, 187, 187, .05) 60%,
+        rgba(204, 204, 204, .05) 80%,
+        rgba(238, 238, 238, .05) 100%
+    );
+    height: 900px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#GetInTouchSectionContent{
+    width: 86.46%;
+    height: 87%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#GITSLeft{
+    height: 100%;
+    width: 49.4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#GITSLeftTitle{
+    height: 7.02%;
+    width: 100%;
+    white-space: pre;
+}
+
+#GITSLeftForm{
+    width: 100%;
+    height: 89.4%;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#formDividerName, #formDividerEmail{
+    display: flex;
+    flex-direction: column;
+    height: 14.3%;
+    width: 100%;
+    gap: 10px;
+}
+
+#formDividerMessage{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 41.25%;
+    gap: 10px;
+}
+
+label{
+    display: block;
+}
+
+input{
+    color: #ffffff80;
+    padding: 10px 10px 10px 30px;
+}
+
+#name, #email{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    background-color: #00AEFF4D;
+    border: none;
+}
+
+#message{
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    background-color: #00AEFF4D;
+    border: none;
+    vertical-align: text-top;
+    padding: 20px 30px;
+    overflow: hidden;
+}
+
+#GITSLeftFormSubmit{
+    height: 9.86%;
+    width: 36.26%;
+    border-radius: 50px;
+    background-color: transparent;
+    border: solid #11AFF9 2px;
+    cursor: pointer;
+}
+
+#GITSLeftFormSubmit:active{
+    transform: scale(0.95);
+    opacity: 0.8;
+}
+
+#GITSLeftFormSubmit:hover:not(:active){
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+#GITSRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 42.17%;
+}
+
+#GITSRightImg{
+    width: 100%;
+    height: 65.16%;
+    background-image: url(../images/contactMePics/contactMeRightImg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#GITSRightCreds{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    height: 31.2%;
+}
+
+.GITSRightCredsIcons{
+    width: 35px;
+    height: 35px;
+}
+
+.GITSRightCredsSections{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+
+
+
+
+#FooterSection {
+    background: linear-gradient(
+        90deg,
+        rgba(119, 119, 119, 0.05) 0%,
+        rgba(170, 170, 170, 0.05) 20%,
+        rgba(187, 187, 187, 0.05) 40%,
+        rgba(170, 170, 170, 0.05) 60%,
+        rgba(238, 238, 238, 0.05) 80%
+    );
+    box-sizing: border-box;
+    padding: 52px 40px 40px 97px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    min-height: 600px;
+    position: relative;
+}
+#footerContent {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 105px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+#troyLogo2 {
+    border-radius: 123px;
+    flex-shrink: 0;
+    width: 255px;
+    height: 246px;
+    position: relative;
+    object-fit: cover;
+}
+#footerTexts {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 170px;
+    width: 100%;
+}
+.footerTextsSections {
+    display: inline-flex;
+    flex-direction: column;
+    height: 227px;
+    gap: 20px;
+}
+.footerTextsBodyBox{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    width: max-content;
+    opacity: .8;
+
+}
+.SubSections{
+    display: inline-flex;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+#footerBacktoTopButton {
+    width: 20px;
+    height: 20px;
+    border: solid #11AFF9 3px;
+    border-radius: 50%;
+    padding: 15px;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footerBackUpButtonImg{
+    width: 1em;
+    height: 1em;
+}
+#footerBacktoTopButton:hover{
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    right: 30px;
+    bottom: 30px;
+}
+#footerBacktoTopButton:hover #footerBackUpButtonImg{
+    width: 80%;
+    height: 80%;
+}

@@ -1,0 +1,536 @@
+html{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    position: relative;
+}
+
+a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.buttonClickable:active{
+    transform: scale(0.95);
+    opacity: 0.8;
+}
+
+.buttonClickable:hover:not(:active){
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+
+#BodySection{
+    width: 86.1458%;
+    display: flex;
+    flex-direction: column;
+    height: inherit; 
+    margin: 0;
+    gap: 12.5rem;
+    position: relative;
+}
+
+.Heading1{
+    font-size: 4.5rem;
+    line-height: 5.85rem;
+    letter-spacing: -0.09rem;
+    font-weight: 700;
+    font-family: "Inter-Bold", sans-serif;
+}
+
+.Heading2 {
+    font-size: 3.125rem;
+    color: white;
+    line-height: 110%;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    letter-spacing: -2%;
+    text-transform: capitalize;
+}
+
+.Subheading{
+    font-size: 1.125rem;
+    color: #11aff9;
+    line-height: 150%;
+    font-family: "Inter", sans-serif;;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.BodyHero{
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    letter-spacing: 0;
+    font-weight: 600;
+    font-family: "Inter-Regular", sans-serif;
+    margin: 0;
+}
+
+.BlueText{
+    color: #11AFF9;
+}
+
+.BodyText{
+    font-size: 1.125rem;
+    color: white;
+    font-family: "Inter", sans-serif;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+#RectangleDesignBottom {
+    background: linear-gradient(
+        90deg,
+        rgba(189, 0, 255, 1) 0%,
+        rgba(0, 5, 255, 1) 100%
+    );
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    filter: blur(72.65px);
+}
+
+.circleDesign{
+    border-radius: 50%;
+    opacity: 0.5;
+    width: 522px;
+    height: 522px;
+    position: absolute;
+    filter: blur(300px);
+    z-index: -10;
+}
+
+#cd1{
+    background: #11aff9;
+    left: -10%;
+    top: 80%;
+}
+
+#cd2{
+    background: rgba(250, 255, 251, 0.82);
+    right: -10%;
+    top: 60%;
+}
+
+#cd3{
+    background: #1ab6c7;
+    left: -10%;
+    top: 40%;
+}
+
+#cd4{
+    background: #ae75c2;
+    right: -10%;
+    top: 20%;
+}
+
+#NavigationSection {
+    margin: 50px 0px;
+    width: 86.458%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#TroyLogoNav {
+    border-radius: 36px;
+    flex-shrink: 0;
+    width: 4.6875rem;
+    height: 4.6875rem;
+    object-fit: cover;
+}
+
+#NavBar {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2.875rem;
+    align-items: center;
+}
+
+#NavLinkSelected {
+    color: #11aff9;
+    font-family: "Inter-Bold", sans-serif;
+    transform: scale(1.2) translateY(-1px);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.NavLink {
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    font-weight: 400;
+    opacity: 0.8;
+    color: white;
+} 
+
+.NavLink:active {
+    color: white;
+}
+
+#HeroSection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 488.61px;
+    gap: 160px;
+    flex-direction: row;
+    position: relative;
+    margin-left: 128px;
+}
+
+#TroyHeroPic {
+    width: 522.46;
+    height: 488.61px;
+    mix-blend-mode: luminosity;
+}
+
+#TroyHeroPicBg{
+    background: radial-gradient(circle, rgba(14, 164, 233, 1),rgba(14, 164, 233, .5));
+    filter: blur(250px);
+    width: 300px;
+    height: 550px;
+    position: absolute;
+    border-radius: 50%;
+    top: 15px;
+    left: 120px;
+    transform:rotateZ(-10deg);
+}
+
+#HeroContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 404px;
+    position: relative;
+}
+
+#HeroText{
+    align-self: stretch;
+    text-align: left;
+}
+
+#HeroLinks {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.HeroIcon {
+    width: 24px;
+    height: 24px;
+    border: solid 1px #0ea5e9;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#HeroButton{
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #11aff9;
+    border-width: 2px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 165px;
+    height: 51px;
+    position: relative;
+    cursor: pointer;
+}
+
+.ButtonText{
+    color: #11aff9;
+    font-family: "Inter-SemiBold", sans-serif;
+    font-size: 15px;
+    line-height: 150%;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+} 
+
+#QuoteSection{
+    background: linear-gradient(
+        90deg,
+        rgba(119, 119, 119, 0.05) 20%,
+        rgba(170, 170, 170, 0.05) 40%,
+        rgba(187, 187, 187, 0.05) 60%,
+        rgba(204, 204, 204, 0.05) 80%,
+        rgba(238, 238, 238, 0.05) 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 282px;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 24px 0px;
+}
+
+#quoteText{
+    margin: 0;
+    font-size: 3.125rem;
+    font-family: "Playfair Display", serif;
+    
+    align-items: center;
+}
+
+#quoteMeSection{
+    display: flex;
+    margin: 0;
+    font-size: 2.25rem;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+#quoteMe{
+    margin:0;
+    font-size: 2.25rem;
+}
+
+#quote{
+    position: relative;
+    font-family: "Playfair Display", serif;
+}
+
+.quoteLove{
+    color: #11aff9;
+    font-weight: 700;
+    font-size: 60px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+#BioSection {
+    margin-top: 200px;
+    background: linear-gradient(
+        90.54deg,
+        rgba(119, 119, 119, 0.05) 20%,
+        rgba(170, 170, 170, 0.05) 40%,
+        rgba(187, 187, 187, 0.05) 60%,
+        rgba(204, 204, 204, 0.05) 80%,
+        rgba(238, 238, 238, 0.05) 100%
+    );
+    padding: 0px 90px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 5px 5px 35px 15px rgba(0, 0, 0, 0.25);
+}
+
+#BioContent{
+    width: 525px;
+    height: 260px;
+}
+
+#bioText{   
+    width: 100%;
+}
+
+#troyPic2{
+    object-fit: cover;
+    mix-blend-mode: luminosity;
+}
+
+.Sections{
+    background: linear-gradient(
+        90deg,
+        rgba(119, 119, 119, 0.05) 20%,
+        rgba(170, 170, 170, 0.05) 40%,
+        rgba(187, 187, 187, 0.05) 60%,
+        rgba(204, 204, 204, 0.05) 80%,
+        rgba(238, 238, 238, 0.05) 100%
+    );
+    padding: 0px 89px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+    box-sizing: border-box;
+}
+
+.sectionContent{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: flex-end;
+}
+
+.sectionText{
+    display: flex;
+    flex-direction: column;
+    width: 525px;
+    gap: 8px;
+    font-size: 1.125rem;
+}
+
+.sectionPic{
+    box-shadow: 0px 0px 250px -50px rgba(255, 255, 255, 0.2);
+}
+
+.sectionButtonBox{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.sectionButton {
+    border: solid 2px #11aff9;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 223px;
+    height: 69px;
+}
+
+.sectionButtonText{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#SAndIPic,#CMPic{
+    order: 2;
+}
+
+#aboutMePic,#SAndIPic,#CMPic,#EAMPic{
+    border-radius: 50px;
+}
+
+#FooterSection {
+    margin-top: 200px;
+    background: linear-gradient(
+        90deg,
+        rgba(119, 119, 119, 0.05) 0%,
+        rgba(170, 170, 170, 0.05) 20%,
+        rgba(187, 187, 187, 0.05) 40%,
+        rgba(170, 170, 170, 0.05) 60%,
+        rgba(238, 238, 238, 0.05) 80%
+    );
+    box-sizing: border-box;
+    padding: 52px 40px 40px 97px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+#footerContent {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 105px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+#troyLogo2 {
+    border-radius: 123px;
+    flex-shrink: 0;
+    width: 255px;
+    height: 246px;
+    position: relative;
+    object-fit: cover;
+}
+
+#footerTexts {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 170px;
+    width: 100%;
+}
+
+.footerTextsSections {
+    display: inline-flex;
+    flex-direction: column;
+    height: 227px;
+    gap: 20px;
+}
+
+.footerTextsBodyBox{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    width: max-content;
+    opacity: .8;
+
+}
+
+.SubSections{
+    display: inline-flex;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+
+#footerBacktoTopButton {
+    width: 20px;
+    height: 20px;
+    border: solid #11AFF9 3px;
+    border-radius: 50%;
+    padding: 15px;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerBackUpButtonImg{
+    width: 1em;
+    height: 1em;
+}
+
+#footerBacktoTopButton:hover{
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    right: 30px;
+    bottom: 30px;
+}
+
+#footerBacktoTopButton:hover #footerBackUpButtonImg{
+    width: 80%;
+    height: 80%;
+}

@@ -1,0 +1,714 @@
+html{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+* {
+    outline:none;
+}
+
+body{
+    overflow-x: hidden;
+    height: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    gap: 100px;
+    position: relative;
+}
+
+a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+    display: inline-flex;
+}
+
+.Heading1{
+    font-size: 4.5rem;
+    line-height: 5.85rem;
+    letter-spacing: -0.09rem;
+    font-weight: 700;
+    font-family: "Inter-Bold", sans-serif;
+}
+
+.Heading2 {
+    font-size: 3.125rem;
+    color: white;
+    line-height: 110%;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    letter-spacing: -2%;
+    text-transform: capitalize;
+}
+
+.Subheading{
+    font-size: 1.125rem;
+    color: #11aff9;
+    line-height: 150%;
+    font-family: "Inter", sans-serif;;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.BodyHero{
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    letter-spacing: 0;
+    font-weight: 600;
+    font-family: "Inter-Regular", sans-serif;
+    margin: 0;
+}
+
+.BlueText{
+    color: #11AFF9;
+}
+
+.BodyText{
+    font-size: 1.125rem;
+    color: white;
+    font-family: "Inter", sans-serif;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+#RectangleDesignBottom {
+    background: linear-gradient(
+        90deg,
+        rgba(189, 0, 255, 1) 0%,
+        rgba(0, 5, 255, 1) 100%
+    );
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 0px;
+    filter: blur(72.65px);
+}
+
+.circleDesign{
+    display: flex;
+    border-radius: 50%;
+    opacity: 0.5;
+    width: 522px;
+    height: 522px;
+    position: absolute;
+    filter: blur(300px);
+    z-index: -10;
+}
+
+#cd1{
+    background: #11aff9;
+    left: -10%;
+    top: 80%;
+}
+
+#cd2{
+    background: rgba(250, 255, 251, 0.82);
+    right: -10%;
+    top: 60%;
+}
+
+#cd3{
+    background: #1ab6c7;
+    left: -10%;
+    top: 40%;
+}
+
+#cd4{
+    background: #ae75c2;
+    right: -10%;
+    top: 20%;
+}
+
+#TopSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#NavigationSection {
+    margin: 50px 0px;
+    width: 86.458%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#TroyLogoNav {
+    border-radius: 36px;
+    flex-shrink: 0;
+    width: 4.6875rem;
+    height: 4.6875rem;
+    object-fit: cover;
+}
+
+#NavBar {
+    display: flex;
+    gap: 2.875rem;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+#NavLinkSelected {
+    color: #11aff9;
+    font-family: "Inter-Bold", sans-serif;
+    transform: scale(1.2) translateY(-1px);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.NavLink {
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    font-weight: 400;
+    opacity: 0.8;
+    color: white;
+} 
+
+.NavLink:active {
+    color: white;
+}
+
+#HeroBannerSection{
+    background-image: url("../images/aboutMePics/AboutMeBanner.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 320px;
+    padding: 85px 0px 0px 44.31%;
+    justify-content: flex-start;
+}
+
+#bannerContentSub{
+    white-space: pre;
+}
+
+#bannerContent{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#ThroughTheYearsSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d90d;
+    width: 100%;
+    min-height: 43.75rem;
+}
+
+#ThroughTheYearsContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:86.39%;
+}
+
+#ThroughTheYearsImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        90deg,
+        rgba(119, 119, 119, .1) 20%,
+        rgba(170, 170, 170, .1) 40%,
+        rgba(187, 187, 187, .1) 60%,
+        rgba(204, 204, 204, .1) 80%,
+        rgba(238, 238, 238, .1) 100%
+    );
+    border-radius: 3.125rem;
+    box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.2);
+}
+
+#ThroughTheYearsImagePic {
+    border-radius: 3.125rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: luminosity;
+}
+
+#ThroughTheYearsText{
+    display: grid;
+    grid-template-columns: 390px;
+    grid-template-rows: max-content max-content 325px;
+    gap: 10px;
+    text-align: justify;
+}
+
+#ThroughTheYearsTextBody{
+    overflow-y: scroll;
+    padding-right: 10px;
+}
+
+.customButton::-webkit-scrollbar{
+    width: 15px;
+    background-color: #252835;
+    border-radius: 10px;
+}
+
+.customButton::-webkit-scrollbar-thumb {
+    background-color: #484D64;;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-clip: content-box;
+}
+
+#ThroughTheYearsButtons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+#ThroughTheYearsSelectionButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 26.87px;
+    height: 171.72px;
+}
+
+#upButton{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#downButton{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#upButtonBox{
+    width: 54px;
+    height: 54px;
+}
+
+#downButtonBox{
+    width: 54px;
+    height: 54px;
+}
+
+#upButton:hover, #downButton:hover{
+    cursor: pointer;
+}
+
+
+#RootsAndRoofsSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d90d;
+    width: 100%;
+    min-height: 43.75rem;
+}
+
+#RaRContent{
+    display: flex;
+    width: 83.6%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+#RaRLabel{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#RaRDisplaySubSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 795px;
+    height: 574px;
+    border-radius: 53px;
+    position: relative;
+    border: solid 20px #d9d9d90d;
+    align-self: flex-end;
+}
+
+.RaRDisplaySubSectionImg{
+    position: absolute;
+}
+
+#RaRDisplaySubSection .RaRDisplaySubSectionImg:nth-child(1) {
+    animation: fade 25s ease-in-out infinite;
+    z-index: 7;
+}
+
+#RaRDisplaySubSection .RaRDisplaySubSectionImg:nth-child(2) {
+    animation: fade 25s ease-in-out 4s infinite;
+    z-index: 6;
+}
+
+#RaRDisplaySubSection .RaRDisplaySubSectionImg:nth-child(3) {
+    animation: fade 25s ease-in-out 8s infinite;
+    z-index: 5;
+}
+
+#RaRDisplaySubSection .RaRDisplaySubSectionImg:nth-child(4) {
+    animation: fade 25s ease-in-out 12s infinite;
+    z-index: 4;
+}
+
+#RaRDisplaySubSection .RaRDisplaySubSectionImg:nth-child(5) {
+    animation: fade 25s ease-in-out 16s infinite;
+    z-index: 3;
+}
+
+#RaRDisplaySubSection .RaRDisplaySubSectionImg:nth-child(6) {
+    animation: fade 25s ease-in-out 20s infinite;
+    z-index: 2;
+}
+
+#RaRDisplaySubSection .RaRDisplaySubSectionImg:nth-child(7) {
+    animation: fade 25s ease-in-out 21s infinite;
+    z-index: 1;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    18%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+#RaRDisplaySubSectionText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 0 0 25px 25px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 20%;
+    padding: 10px;
+    overflow-y: auto;
+    position: absolute;
+    bottom: 0;
+    gap: 5px;
+    z-index: 100;
+}
+
+#RaRDisplaySubSectionText::-webkit-scrollbar{
+    display: none;
+}
+
+#RaRDisplaySubSectionTitle {
+    text-align: center;
+
+}
+
+#RaRDisplaySubSectionBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 92.05%;
+    text-align: center;
+}
+
+.RaRDisplaySelect{
+    width: 100%;
+    height: 31.65%;
+}
+
+#RaRDisplaySelectSubSection{
+    display: flex;
+    flex-direction: column;
+    width: 309px;
+    height: 622px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.RaRDisplaySelectSubSectionImages{
+    padding: 10px;
+    background-color: #d9d9d90d;
+    border-radius: 30px 0px 30px 0px;
+    transition: ease-in;
+}
+
+.RaRDisplaySelectSubSectionImages:hover{
+    box-sizing: border-box;
+    transition: ease-in-out;
+    animation: scaleHover 1s ease-in-out infinite alternate;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+@keyframes scaleHover {
+    0%{
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.3);
+    }
+}
+
+#MyFirstTeachearsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 850px;
+    gap: 50px;
+    box-shadow: 0.3125rem 0.3125rem 2.1875rem 0.9375rem rgba(0, 0, 0, 0.25);
+}
+
+.MyFirstTeachearsSectionBg{
+    background: linear-gradient(
+        90deg,
+        rgba(119, 119, 119, 0.1) 20%,
+        rgba(170, 170, 170, 0.1) 40%,
+        rgba(187, 187, 187, 0.1) 60%,
+        rgba(204, 204, 204, 0.1) 80%,
+        rgba(238, 238, 238, 0.1) 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#MFTSectionMomContent, #MFTSectionDadContent{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    width: 74.0278%;
+    min-height: 400px;
+}
+
+#MFTSectionContentText {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 616px;
+}
+
+#ThreeMusketeersSection {
+    background: rgba(217, 217, 217, 0.05);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 700px;
+}
+
+#ThreeMusketeersSectionContent{
+    width: 81.51%;
+    height: 81.29%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#TMSectionContentImageBox {
+    width: 56.31%;
+    height: 100%;
+    position: relative;
+    box-shadow: 0rem 0rem 15.625rem 0rem rgba(255, 255, 255, 0.25);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#TMSectionImageCarousel{
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    height: 100%;
+    transition: none;
+}
+
+.TMSectionImageCarouselItem {
+    width: 100%;
+    height: 100%;
+}
+
+#TMSectionImageNavArrowLeft:hover, #TMSectionImageNavArrowRight:hover {
+    cursor: pointer;
+}
+
+#TMSectionImageNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 32.91%;
+    height: 9.84%;
+    position: absolute;
+    right: 33.48%;
+    left: 33.62%;
+    bottom: 2.64%;
+    top: 87.52%;
+}
+
+#TMSectionImageNavDots {
+    display: flex;
+    width: 61.21%;
+    height: 28.58%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#TMSectionImageNavDots .TMSectionImageNavDots:nth-child(1){
+    opacity: 1;
+    background-color: #11AFF9;
+}
+
+.TMSectionImageNavDots {
+    opacity: 0.5;
+    width: 10.56%;
+    height: 100%;
+    background: #373737;
+    border-radius: 50%;
+}
+
+#TMSectionContentText {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 34.3%;
+    height: 66.61%;
+}
+
+#FooterSection {
+    background: linear-gradient(
+        90deg,
+        rgba(119, 119, 119, 0.05) 0%,
+        rgba(170, 170, 170, 0.05) 20%,
+        rgba(187, 187, 187, 0.05) 40%,
+        rgba(170, 170, 170, 0.05) 60%,
+        rgba(238, 238, 238, 0.05) 80%
+    );
+    box-sizing: border-box;
+    padding: 52px 40px 40px 97px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    min-height: 600px;
+    position: relative;
+}
+
+#footerContent {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 105px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+#troyLogo2 {
+    border-radius: 123px;
+    flex-shrink: 0;
+    width: 255px;
+    height: 246px;
+    position: relative;
+    object-fit: cover;
+}
+
+#footerTexts {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 170px;
+    width: 100%;
+}
+
+.footerTextsSections {
+    display: inline-flex;
+    flex-direction: column;
+    height: 227px;
+    gap: 20px;
+}
+
+.footerTextsBodyBox{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    width: max-content;
+    opacity: .8;
+
+}
+
+.SubSections{
+    display: inline-flex;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+
+#footerBacktoTopButton {
+    width: 20px;
+    height: 20px;
+    border: solid #11AFF9 3px;
+    border-radius: 50%;
+    padding: 15px;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerBackUpButtonImg{
+    width: 1em;
+    height: 1em;
+}
+
+#footerBacktoTopButton:hover{
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    right: 30px;
+    bottom: 30px;
+}
+
+#footerBacktoTopButton:hover #footerBackUpButtonImg{
+    width: 80%;
+    height: 80%;
+}

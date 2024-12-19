@@ -1,0 +1,680 @@
+html{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    align-items: center;
+}
+
+* {
+    outline:none;
+}
+
+body{
+    overflow-x: hidden;
+    height: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    gap: 100px;
+    position: relative;
+}
+
+a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+    display: inline-flex;
+}
+
+.Heading1{
+    font-size: 4.5rem;
+    line-height: 5.85rem;
+    letter-spacing: -0.09rem;
+    font-weight: 700;
+    font-family: "Inter-Bold", sans-serif;
+}
+
+.Heading2 {
+    font-size: 3.125rem;
+    color: white;
+    line-height: 110%;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    letter-spacing: -2%;
+    text-transform: capitalize;
+}
+
+.Subheading{
+    font-size: 1.125rem;
+    color: #11aff9;
+    line-height: 150%;
+    font-family: "Inter", sans-serif;;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.BodyHero{
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    letter-spacing: 0;
+    font-weight: 600;
+    font-family: "Inter-Regular", sans-serif;
+    margin: 0;
+}
+
+.BlueText{
+    color: #11AFF9;
+}
+
+.BodyText{
+    font-size: 1.125rem;
+    color: white;
+    font-family: "Inter", sans-serif;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+#RectangleDesignBottom {
+    background: linear-gradient(
+        90deg,
+        rgba(189, 0, 255, 1) 0%,
+        rgba(0, 5, 255, 1) 100%
+    );
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 0px;
+    filter: blur(72.65px);
+}
+
+.circleDesign{
+    display: flex;
+    border-radius: 50%;
+    opacity: 0.2;
+    width: 522px;
+    height: 522px;
+    position: absolute;
+    filter: blur(300px);
+    z-index: -10;
+    pointer-events: none;
+    overflow: hidden;
+    
+}
+
+#cd1{
+    background: #11aff9;
+    left: -20%;
+    top: 80%;
+}
+
+#cd2{
+    background: rgba(250, 255, 251, 0.82);
+    right: -20%;
+    top: 60%;
+}
+
+#cd3{
+    background: #1ab6c7;
+    left: -20%;
+    top: 40%;
+}
+
+#cd4{
+    background: #ae75c2;
+    right: -20%;
+    top: 20%;
+}
+
+#TopSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#NavigationSection {
+    margin: 50px 0px;
+    width: 86.458%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#TroyLogoNav {
+    border-radius: 36px;
+    flex-shrink: 0;
+    width: 4.6875rem;
+    height: 4.6875rem;
+    object-fit: cover;
+}
+
+#NavBar {
+    display: flex;
+    gap: 2.875rem;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+#NavLinkSelected {
+    color: #11aff9;
+    font-family: "Inter-Bold", sans-serif;
+    transform: scale(1.2) translateY(-1px);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.NavLink {
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    font-weight: 400;
+    opacity: 0.8;
+    color: white;
+} 
+
+.NavLink:active {
+    color: white;
+}
+
+#HeroBannerSection{
+    background-image: url("../images/sAndIPics/SandIBanner.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 320px;
+    padding: 85px 0px 0px 44.31%;
+    justify-content: flex-start;
+}
+
+#bannerContent{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#bannerContentSub{
+    white-space: pre;
+}
+
+
+
+
+
+
+#CodingSection {
+    background: rgba(217, 217, 217, 0.05);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+}
+
+#CodingSectionContent{
+    width: 86.46%;
+    height: 71.46%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#CSCText {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 27.71%;
+    height: 83.14%;
+}
+
+#CSCCarouselBox {
+    width: 58.5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+#CSCCarouselImageBox{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0rem 0rem 15.625rem 0rem rgba(255, 255, 255, 0.25);
+}
+
+#CSCCarouselImages{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    transition: none;
+}
+
+.CSCCarouselItem {
+    width: 100%;
+    height: 100%;
+}
+
+#CSCCarouselBoxNavArrowLeft:hover, #CSCCarouselBoxNavArrowRight:hover {
+    cursor: pointer;
+}
+
+#CSCCarouselBoxNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 32.96%;
+    height:9.76%;
+}
+
+#CSCCarouselBoxNavDots {
+    display: flex;
+    width: 61.21%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#CSCCarouselBoxNavDots .CSCCarouselBoxNavDot:nth-child(1){
+    opacity: 1;
+    background-color: #11AFF9;
+}
+
+.CSCCarouselBoxNavDot {
+    opacity: 0.5;
+    width: 1rem;
+    height: 1rem;
+    background: #373737;
+    border-radius: 50%;
+}
+
+#CSCTextBody{
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.customScroll::-webkit-scrollbar{
+    width: 15px;
+    background-color: #252835;
+    border-radius: 10px;
+}
+
+.customScroll::-webkit-scrollbar-thumb {
+    background-color: #484D64;;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-clip: content-box;
+}
+
+
+
+
+
+
+#BikingSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d90d;
+    width: 100%;
+    height: 43.75rem;
+}
+
+#BikingSectionContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:86.39%;
+    height: 73.08%;
+}
+
+#BSCCollage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 3.125rem;
+    height: 100%;
+    width: 42.13%;
+}
+
+#BSCCollageTop{
+    height: 65.65%;
+    width: 100%;
+    box-shadow: 0px 0px 200px rgba(255, 255, 255, 0.2);
+}
+
+#BSCCollagePicsTop{
+    width: 100%;
+    height: 100%;
+}
+
+#BSCCollageBottom{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    overflow: hidden;
+    height: 31.49%;
+    width: 100%;
+}
+
+.BSCCollagePics{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+#BSCCollagePics2{
+    height: auto;
+    width: 100%;
+}
+
+#BSCText{
+    display: grid;
+    grid-template-columns: 615px;
+    grid-template-rows: max-content max-content max-content;
+    gap: 10px;
+    text-align: left;
+}
+
+#BSCTextBody{
+    width: 100%;
+}
+
+#Terraria_, #Void_Stranger{
+    display: none;
+}
+
+.GamingSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background-color: #d9d9d90d;
+}
+
+#GamingSectionContent{
+    display: flex;
+    width: 86.46%;
+    height: 62.34%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#GSCImgBox{
+    width: 58.41%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#GSCImgBoxCarousel{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+#GSCImages{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    transition: none;
+}
+
+.GSCImgBoxCarouselItem{
+    width: 100%;
+    height: 100%;
+}
+
+#GSCText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 27.71%;
+    height: 100%;
+    gap: 10px;
+}
+
+#GSCTextBody{
+    height: 68.08%;
+    width: 100%;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+#GSCImgBoxNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20px;
+    width: 20%;
+    height: 5.37%;
+}
+
+#GSCImgBoxNavDots {
+    display: flex;
+    width: 45%;
+    height: 66.67%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.GSCImgBoxNavDot {
+    opacity: 0.5;
+    width: 12px;
+    height: 12px;
+    background: #1E1E1E;
+    border-radius: 50%;
+}
+
+#GSCImgBoxNavDots .GSCImgBoxNavDot:nth-child(1){
+    opacity: 1;
+    background-color: #11AFF9;
+}
+
+#GamingSectionNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 63.13%;
+    height: 10.6%;
+}
+
+#GamingSectionNavLeft{
+    transform: rotate(180deg);
+}
+
+#GSCImgBoxNavRight:hover, #GSCImgBoxNavLeft:hover {
+    cursor: pointer;
+}
+
+#BingingSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+    background-color: #d9d9d90d;
+}
+
+#BingingSectionContent{
+    width: 86.53%;
+    height: 73.22%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#BingeSCText{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 49.36%;
+    height: 56.57%;
+}
+
+#BingeSCImages{
+    display: flex;
+    flex-direction: column;
+    width: 42.13%;
+    height: 100%;
+    gap: 15px;
+}
+
+#BingeSCImagesTop{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+#BingeSCImagesBottom{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.BinegSCImage{
+    width: 50%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+#BingeSCImagesTop .BinegSCImage:nth-child(1) {
+    box-shadow: 0px 0px 100px #ffffff40;
+}
+
+#BingeSCImagesTop .BinegSCImage:nth-child(2) {
+    box-shadow: 0px 0px 100px #ff000040;
+}
+#BingeSCImagesBottom .BinegSCImage:nth-child(1) {
+    box-shadow: 0px 0px 100px #0040ff40;
+}
+#BingeSCImagesBottom .BinegSCImage:nth-child(2) {
+    box-shadow: 0px 0px 100px #00E6FF40;
+}
+
+
+#FooterSection {
+    background: linear-gradient(
+        90deg,
+        rgba(119, 119, 119, 0.05) 0%,
+        rgba(170, 170, 170, 0.05) 20%,
+        rgba(187, 187, 187, 0.05) 40%,
+        rgba(170, 170, 170, 0.05) 60%,
+        rgba(238, 238, 238, 0.05) 80%
+    );
+    box-sizing: border-box;
+    padding: 52px 40px 40px 97px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    min-height: 600px;
+    position: relative;
+}
+#footerContent {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 105px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+#troyLogo2 {
+    border-radius: 123px;
+    flex-shrink: 0;
+    width: 255px;
+    height: 246px;
+    position: relative;
+    object-fit: cover;
+}
+#footerTexts {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 170px;
+    width: 100%;
+}
+.footerTextsSections {
+    display: inline-flex;
+    flex-direction: column;
+    height: 227px;
+    gap: 20px;
+}
+.footerTextsBodyBox{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    width: max-content;
+    opacity: .8;
+
+}
+.SubSections{
+    display: inline-flex;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+#footerBacktoTopButton {
+    width: 20px;
+    height: 20px;
+    border: solid #11AFF9 3px;
+    border-radius: 50%;
+    padding: 15px;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footerBackUpButtonImg{
+    width: 1em;
+    height: 1em;
+}
+#footerBacktoTopButton:hover{
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    right: 30px;
+    bottom: 30px;
+}
+#footerBacktoTopButton:hover #footerBackUpButtonImg{
+    width: 80%;
+    height: 80%;
+}
