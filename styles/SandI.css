@@ -514,11 +514,7 @@ p{
     transform: rotate(180deg);
 }
 
-#GamingSectionNavLeft:hover, #GamingSectionNavLeft:hover {
-    cursor: pointer;
-}
-
-#GamingSectionNavRight:hover, #GamingSectionNavRight:hover {
+#GamingSectionNavLeft:hover, #GamingSectionNavRight:hover {
     cursor: pointer;
 }
 
