@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/SandI.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="RectangleDesignBottom"></div>
+    <!-- Can't Fix clickScrolling (i.e., scroll when clicking an image) -->
+    <!-- <div class="circleDesign" id="cd1"></div>
+    <div class="circleDesign" id="cd2"></div>
+    <div class="circleDesign" id="cd3"></div>
+    <div class="circleDesign" id="cd4"></div> -->
+    <div id="TopSection">
+        <div id="NavigationSection">
+        <img id="TroyLogoNav" src="images/homePics/logoTroy.png" />
+        <div id="NavBar">
+            <a class="NavLink" href="index.html"><div >Home</div></a>
+            <a class="NavLink" href="aboutMe.html"><div>About Me</div></a>
+            <a class="NavLink" id="NavLinkSelected"><div>Skills &amp; Interests</div></a>
+            <a class="NavLink" href="SDG.html"><div>Education &amp; Me</div></a>
+            <a class="NavLink" href="ContactMe.html"><div>Contact Me</div></a>
+        </div>
+        </div>
+        <div id="HeroBannerSection">
+            <div id="bannerContent">
+                <p class="Heading1" id="bannerContentTitle">Skills & <span class="BlueText">Interests</span></p>
+                <p class="BodyHero" id="bannerContentSub">What Do You <span class="BlueText">Mean</span>? My Skills Are My <span class="BlueText">Interests</span>.</p>
+            </div>
+        </div>
+    </div>
+    <div id="CodingSection">
+        <div id="CodingSectionContent">
+            <div id="CSCCarouselBox">
+                <div id="CSCCarouselImageBox">
+                    <div id="CSCCarouselImages">
+                        <video autoplay muted class="CSCCarouselItem" src="videos/sAndIVids/budgetingProject.mp4"></video>
+                        <video autoplay muted class="CSCCarouselItem" src="videos/sAndIVids/ytCloneProject.mp4"></video>
+                        <video autoplay muted class="CSCCarouselItem" src="videos/sAndIVids/memoryGameProject.mp4"></video>
+                    </div>
+                </div>
+                <div id="CSCCarouselBoxNav">
+                    <img id="CSCCarouselBoxNavArrowLeft" src="images/aboutMePIcs/arrowLeft.svg" onclick="test(this, 'coding', -1)"/>
+                    <div id="CSCCarouselBoxNavDots">
+                        <div class="CSCCarouselBoxNavDot"></div>
+                        <div class="CSCCarouselBoxNavDot"></div>
+                        <div class="CSCCarouselBoxNavDot"></div>
+                    </div>
+                    <img id="CSCCarouselBoxNavArrowRight" src="images/aboutMePIcs/arrowRight.svg" onclick="test(this, 'coding', 1)"/>
+                </div>
+            </div>
+            <div id="CSCText">
+                <div class="Subheading" id="CSCTextSub">It really fits</div>
+                <div class="Heading2" id="CSCTextTitle">Coding</div>
+                <div class="BodyText customScroll" id="CSCTextBody">I really love coding. Just the act of coding really gets my gears grinding. I could easily learn coding for hours on end and not even feel sick of it, unlike other subjects. This was totally an anomaly for me. I found out about coding through sheer chance, I mean i knew of coding back then but I didn’t knew coding. I just love turning my ideas into tangible programs that I get to manipulate and experiment on. If I wanted to start my studying day filled with dopamine, I would try to solve a Leetcode. Sure it would take a quarter of the day, but at least my brain is warmed up. The videos on the left are some of the personal projects I’ve worked on, highlighting my competency with coding. Though it’s not worth bragging about, I mean I’m still at an Intermediate level after all, but I still would love to track my progress, something to look back on.</div>
+            </div>
+        </div>
+    </div>
+    <div id="BikingSection">
+        <div id="BikingSectionContent">
+            <div id="BSCText">
+                <div class="Subheading" id="BSCTextSub">Anywhere and Everywhere</div>
+                <div class="Heading2" id="BSCTextTitle">Biking</div>
+                <div class="BodyText" id="BSCTextBody">
+                    This is probably one of my favorite hobbies to do in my free time. Because 1, it’s the only time I exercise, and 2, I get to explore places I couldn’t even go to normally. On a biking day, I would wake up at 4 am, do my preparations like warming up, carb loading, and checking up on my gear. Then by 5 am I would ride the day away. If my day wasn’t packed, I would ride until my legs gave out. Like literally, biking for 5-8 hours, going from one city to the next. Though this is probably unhealthy for me because I wouldn’t do exercise for like 3 months and get on the bike and ride for 5 hours. 
+                </div>
+            </div>
+            <div id="BSCCollage">
+                <div id="BSCCollageTop" class="BSCCollagePics">
+                    <img id="BSCCollagePicsTop" class="BSCCollagePics" src="images/sAndIPics/bikePic1.jpg" />
+                </div>
+                <div id="BSCCollageBottom">
+                    <img class="BSCCollagePics" src="images/sAndIPics/bikePic2.jpg" />
+                    <img class="BSCCollagePics" id="BSCCollagePics2" src="images/sAndIPics/BikePic3.jpg" />
+                    <img class="BSCCollagePics" src="images/sAndIPics/BikePic4.jpg " />
+                </div>
+            </div>  
+        </div>
+    </div>
+    <div id="GamingSection_">
+        <div id="Genshin_Impact" class="GamingSection">
+            <div id="GamingSectionContent">
+                <div id="GSCImgBox">
+                    <div id="GSCImgBoxCarousel">
+                        <div id="GSCImages">
+                            <img class="GSCImgBoxCarouselItem" src="images/sAndIPics/GenshinPic1.png" />
+                            <img class="GSCImgBoxCarouselItem" src="images/sAndIPics/GenshinPic2.png" />
+                            <img class="GSCImgBoxCarouselItem" src="images/sAndIPics/GenshinPic3.png" />
+                        </div>
+                    </div>
+                    <div id="GSCImgBoxNav">
+                        <img onclick="test(this, 'gaming',-1)" id="GSCImgBoxNavLeft" src="images/aboutMePIcs/arrowLeft.svg" />
+                        <div id="GSCImgBoxNavDots">
+                            <div class="GSCImgBoxNavDot"></div>
+                            <div class="GSCImgBoxNavDot"></div>
+                            <div class="GSCImgBoxNavDot"></div>
+                        </div>
+                        <img onclick="test(this, 'gaming',1)" id="GSCImgBoxNavRight" src="images/aboutMePIcs/arrowRight.svg" />
+                    </div>
+                </div>
+                <div id="GSCText">
+                    <div class="Subheading" id="GSCTextSub">All day, everyday</div>
+                    <div class="Heading2" id="GSCTextTitle">Gaming</div>
+                    <div class="BodyText customScroll" id="GSCTextBody">Genshin, my first ever triple A game. To be honest, the first time I got my laptop I only taught about if I could play genshin on it. Spoilers but I found out I could. And let me tell you, this is one of my favorite games thus far. The amazing sceneries, the music, the characters, the stories, I fell in love with this game the first time I experienced it. And not gonna lie, some aspects of it was taken as inspiration for a couple of projects and assignments. It sparked my curious mind, wanting to explore every nook and cranny of this game. And to this day, I still play everyday.</div>
+                </div>
+            </div>
+            <div id="GamingSectionNav">
+                <img id="GamingSectionNavLeft" src="images/sAndIPics/NavArrowGaming.svg" onclick="changeGame(-1)"/>
+                <div id="GamingSectionNavTitle" class="Heading2">Genshin Impact</div>
+                <img id="GamingSectionNavRight  " src="images/sAndIPics/NavArrowGaming.svg" onclick="changeGame(1)"/>
+            </div>
+        </div>
+        <div id="Terraria_" class="GamingSection">
+            <div id="GamingSectionContent">
+                <div id="GSCImgBox">
+                    <div id="GSCImgBoxCarousel">
+                        <div id="GSCImages">
+                            <img class="GSCImgBoxCarouselItem" src="images/sAndIPics/TerrariaPic1.png" />
+                            <img class="GSCImgBoxCarouselItem" src="images/sAndIPics/TerrariaPic2.png" />
+                            <img class="GSCImgBoxCarouselItem" src="images/sAndIPics/TerrariaPic3.png" />
+                        </div>
+                    </div>
+                    <div id="GSCImgBoxNav">
+                        <img onclick="test(this, 'gaming',-1)" id="GSCImgBoxNavLeft" src="images/aboutMePIcs/arrowLeft.svg" />
+                        <div id="GSCImgBoxNavDots">
+                            <div class="GSCImgBoxNavDot"></div>
+                            <div class="GSCImgBoxNavDot"></div>
+                            <div class="GSCImgBoxNavDot"></div>
+                        </div>
+                        <img onclick="test(this, 'gaming',1)" id="GSCImgBoxNavRight" src="images/aboutMePIcs/arrowRight.svg" />
+                    </div>
+                </div>
+                <div id="GSCText">
+                    <div class="Subheading" id="GSCTextSub">All day, everyday</div>
+                    <div class="Heading2" id="GSCTextTitle">Gaming</div>
+                    <div class="BodyText customScroll" id="GSCTextBody">Now this was a fun and challenging game. This game to me focused more on optimizing characters, techniques, and moves to dodge attacks and deal strong damage to opponents. It combined critical thinking with hand-eye coordination and quick thinking. It's a shame I couldn't finish the game in it's hardest difficulty. Too many priorities piled on top of it I guess.</div>
+                </div>
+            </div>
+            <div id="GamingSectionNav">
+                <img id="GamingSectionNavLeft" src="images/sAndIPics/NavArrowGaming.svg" onclick="changeGame(-1)"/>
+                <div id="GamingSectionNavTitle" class="Heading2">Terraria</div>
+                <img id="GamingSectionNavRight  " src="images/sAndIPics/NavArrowGaming.svg" onclick="changeGame(1)"/>
+            </div>
+        </div>
+        <div id="Void_Stranger" class="GamingSection">
+            <div id="GamingSectionContent">
+                <div id="GSCImgBox">
+                    <div id="GSCImgBoxCarousel">
+                        <div id="GSCImages">
+                            <img class="GSCImgBoxCarouselItem" src="images/sAndIPics/VoidPic1.png" />
+                            <img class="GSCImgBoxCarouselItem" src="images/sAndIPics/VoidPic2.png" />
+                            <img class="GSCImgBoxCarouselItem" src="images/sAndIPics/VoidPic3.png" />
+                        </div>
+                    </div>
+                    <div id="GSCImgBoxNav">
+                        <img onclick="test(this, 'gaming',-1)" id="GSCImgBoxNavLeft" src="images/aboutMePIcs/arrowLeft.svg" />
+                        <div id="GSCImgBoxNavDots">
+                            <div class="GSCImgBoxNavDot"></div>
+                            <div class="GSCImgBoxNavDot"></div>
+                            <div class="GSCImgBoxNavDot"></div>
+                        </div>
+                        <img onclick="test(this, 'gaming',1)" id="GSCImgBoxNavRight" src="images/aboutMePIcs/arrowRight.svg" />
+                    </div>
+                </div>
+                <div id="GSCText">
+                    <div class="Subheading" id="GSCTextSub">All day, everyday</div>
+                    <div class="Heading2" id="GSCTextTitle">Gaming</div>
+                    <div class="BodyText customScroll" id="GSCTextBody">This was a recent game a discovered. And Oh boy, it's filled with mysteries. This is more like a dungeon crawler game where the player (Gray), dived into this dungeon to find a very important friend of hers. And that's just scratching the surface. So many puzzles to figure out, you can even manipulate your UI as a game mechanic, hinting at a "We're in a simulation" story.</div>
+                </div>
+            </div>
+            <div id="GamingSectionNav">
+                <img id="GamingSectionNavLeft" src="images/sAndIPics/NavArrowGaming.svg" onclick="changeGame(-1)"/>
+                <div id="GamingSectionNavTitle" class="Heading2">Void Stranger</div>
+                <img id="GamingSectionNavRight  " src="images/sAndIPics/NavArrowGaming.svg" onclick="changeGame(1)"/>
+            </div>
+        </div>
+    </div>
+    <div id="BingingSection">
+        <div id="BingingSectionContent">
+            <div id="BingeSCText">
+                <div id="BSCTextSub" class="Subheading">A new show, A new story, a new world</div>
+                <div id="BSCTextTitle" class="Heading2">Binging Shows</div>
+                <div id="BSCTextBody" class="BodyText">Experiencing stories and worlds in a serialized format, the thing that can keep me sane. But seriously, when I’m not doing anything and too lazy to play games, I would just binge an entire season’s worth of 20-minute episodes in one sitting. Though this was during my time in high school, of course I don’t have any more time watching shows in college. But I still watch them in small chunks late at night.</div>
+            </div>
+            <div id="BingeSCImages">
+                <div id="BingeSCImagesTop">
+                    <img class="BinegSCImage" src="images/sAndIPics/BingePic1.jpg"/>
+                    <img class="BinegSCImage" src="images/sAndIPics/BingePic2.jpg"/>
+                </div>
+                <div id="BingeSCImagesBottom">
+                    <img class="BinegSCImage" src="images/sAndIPics/BingePic3.jpg"/>
+                    <img class="BinegSCImage" src="images/sAndIPics/BingePic4.jpg"/>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div id="FooterSection">
+        <div id="footerContent">
+            <img id="troyLogo2" src="images/homePics/troyLogo2.png" />
+            <div id="footerTexts">
+                <div class="footerTextsSections" id="footerTextsSitemap">
+                    <div class="BodyHero BlueText SubSectionsLabel" id="siteMapLabel">Site Map</div>
+                    <div class="BodyText footerTextsBodyBox">
+                        <div onclick="window.location.href='index.html'" class="SubSections" id="siteMapHome">Home</div>
+                        <div onclick="window.location.href='aboutMe.html'" class="SubSections" id="siteMapAboutMe">About Me</div>
+                        <div class="SubSections" id="siteMaSI">Skills &amp; Interests</div>
+                        <div onclick="window.location.href='SDG.html'" class="SubSections" id="siteMapEducationMe">Education &amp; Me</div>
+                        <div onclick="window.location.href='ContactMe.html'" class="SubSections" id="siteMapContactMe">Contact Me</div>
+                    </div>
+                    
+                </div>
+                <div class="footerTextsSections" id="footerTextsAboutme">
+                    <div class="BodyHero BlueText SubSectionsLabel" id="aboutMeLabel">About Me</div>
+                    <div class="BodyText footerTextBody">
+                        Troy—A Jack of All Trades, Master of None
+                    </div>
+                </div>
+                <div class="footerTextsSections" id="footerTextsContact">
+                    <div class="BodyHero BlueText SubSectionsLabel" id="contactLabel">Contact</div>
+                    <div class="footerTextsBodyBox">
+                        <div class="SubSections">
+                            <a target="_blank" href="mailto:menardtroyf@gmail.com"><img src="images/homePics/FooterGoogleIcon.svg" /></a>
+                            <a target="_blank" href="mailto:menardtroyf@gmail.com"><div class="BodyText footerTextBody">Gmail</div></a>
+                        </div>
+                        <div class="SubSections">
+                            <a target="_blank" href="https://www.facebook.com/menardtroy.fernandez.5/"><img src="images/homePics/FooterFacebookIcon.svg" /></a>
+                            <a target="_blank" href="https://www.facebook.com/menardtroy.fernandez.5/"><div class="BodyText footerTextBody">Facebook</div></a>
+                        </div>
+                        <div class="SubSections">
+                            <a target="_blank" href="https://github.com/Trill1um"><img src="images/homePics/FooterGitHubIcon.svg" /></a>
+                            <a target="_blank" href="https://github.com/Trill1um"><div class="BodyText footerTextBody">GitHub</div></a>
+                        </div>
+                        <div class="SubSections">
+                            <a target="_blank" href="https://t.me/illiumm"><img src="images/homePics/FooterTelegramIcon.svg" /></a>
+                            <a target="_blank" href="https://t.me/illiumm"><div class="BodyText footerTextBody">Telegram</div></a>
+                        </div>
+                        <div class="SubSections">
+                            <a target="_blank" href="https://discord.com/users/ilium404"><img src="images/homePics/FooterDiscordIcon.svg" /></a>
+                            <a target="_blank" href="https://discord.com/users/ilium404"><div class="BodyText footerTextBody">Discord</div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footerBacktoTopButton" onclick="scrollToTop()">
+            <img id="footerBackUpButtonImg" src="images/homePics/footerArrowButton.svg" />
+        </div>
+    </div>
+    <script src="scripts/S&I.js"></script>
+</body>
+</html>

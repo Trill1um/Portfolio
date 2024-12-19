@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/ContactMe.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="RectangleDesignBottom"></div>
+    <div class="circleDesign" id="cd2"></div>
+    <div class="circleDesign" id="cd3"></div>
+    <div class="circleDesign" id="cd4"></div>
+    <div id="TopSection" class="Section">
+        <div id="NavigationSection">
+        <img id="TroyLogoNav" src="images/homePics/logoTroy.png" />
+        <div id="NavBar">
+            <a class="NavLink" href="index.html"><div >Home</div></a>
+            <a class="NavLink" href="aboutMe.html"><div>About Me</div></a>
+            <a class="NavLink" href="S&I.html"><div>Skills &amp; Interests</div></a>
+            <a class="NavLink" href="SDG.html"><div>Education &amp; Me</div></a>
+            <a class="NavLink" id="NavLinkSelected"><div>Contact Me</div></a>
+        </div>
+        </div>
+        <div id="HeroBannerSection">
+            <div id="bannerContent">
+                <p class="Heading1" id="bannerContentTitle">Contact <span class="BlueText">Me</span></p>
+                <p class="BodyHero" id="bannerContentSub">Got Any Questions? <span class="BlueText">Same</span>.</p>
+            </div>
+        </div>
+    </div>
+    <div id="GetInTouchSection" class="Section">
+        <div id="GetInTouchSectionContent">
+            <div id="GITSLeft">
+                <div id="GITSLeftTitle" class="Heading2">Get In <span class="BlueText">Touch</span></div>
+                <form action="mailto:menardtroyf@gmail.com" method="post" enctype="text/plain" id="GITSLeftForm">
+                    <div id="formDividerName">
+                        <label for="name" class="BodyHero">Your Name</label>
+                        <input type="text" id="name" name="name" class="BodyText" required>
+                    </div>
+                    <div id="formDividerEmail">
+                        <label for="email" class="BodyHero">Your Email</label>
+                        <input type="text" id="email" name="email" class="BodyText" required >
+                    </div>
+                    <div id="formDividerMessage">
+                        <label for="message" class="BodyHero">Your Message</label>
+                        <textarea type="text" id="message" name="message" class="BodyText" required></textarea>
+                    </div>
+                    <input type="submit" value="SUBMIT" id="GITSLeftFormSubmit" class="BodyHero BlueText">
+                </form>
+            </div>
+            <div id="GITSRight">
+                <div id="GITSRightImg"></div>
+                <div id="GITSRightCreds">
+                    <div id="GITSRightCredsLoc" class="GITSRightCredsSections BodyHero">
+                        <img id="GITSRightCredsLocIcon" class="GITSRightCredsIcons" src="images/contactMePics/locIcon.png">
+                        <div id="GITSRightCredsLocText">Perez 4 Compound, Sitio Duluhan, Brgy. Cuta, Batangas City, Batangas</div>
+                    </div>
+                    <div id="GITSRightCredsCall" class="GITSRightCredsSections BodyHero">
+                        <img id="GITSRightCredsCallIcon" class="GITSRightCredsIcons" src="images/contactMePics/callIcon.png">
+                        <div id="GITSRightCredsCallText">+63 9093906152</div>
+                    </div>
+                    <div id="GITSRightCredsMsg" class="GITSRightCredsSections BodyHero">
+                        <img id="GITSRightCredsMsgIcon" class="GITSRightCredsIcons" src="images/contactMePics/emailIcon.png">
+                        <div id="GITSRightCredsMsgText">menardtroyf@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="FooterSection" class="Section">
+        <div id="footerContent">
+            <img id="troyLogo2" src="images/homePics/troyLogo2.png" />
+            <div id="footerTexts">
+                <div class="footerTextsSections" id="footerTextsSitemap">
+                    <div class="BodyHero BlueText SubSectionsLabel" id="siteMapLabel">Site Map</div>
+                    <div class="BodyText footerTextsBodyBox">
+                        <div onclick="window.location.href='index.html'" class="SubSections" id="siteMapHome">Home</div>
+                        <div onclick="window.location.href='aboutMe.html'" class="SubSections" id="siteMapAboutMe">About Me</div>
+                        <div onclick="window.location.href='S&I.html'" class="SubSections" id="siteMaSI">Skills &amp; Interests</div>
+                        <div onclick="window.location.href='SDG.html'" class="SubSections" id="siteMapEducationMe">Education &amp; Me</div>
+                        <div class="SubSections" id="siteMapContactMe">Contact Me</div>
+                    </div>
+                    
+                </div>
+                <div class="footerTextsSections" id="footerTextsAboutme">
+                    <div class="BodyHero BlueText SubSectionsLabel" id="aboutMeLabel">About Me</div>
+                    <div class="BodyText footerTextBody">
+                        Troy—A Jack of All Trades, Master of None
+                    </div>
+                </div>
+                <div class="footerTextsSections" id="footerTextsContact">
+                    <div class="BodyHero BlueText SubSectionsLabel" id="contactLabel">Contact</div>
+                    <div class="footerTextsBodyBox">
+                        <div class="SubSections">
+                            <a target="_blank" href="mailto:menardtroyf@gmail.com"><img src="images/homePics/FooterGoogleIcon.svg" /></a>
+                            <a target="_blank" href="mailto:menardtroyf@gmail.com"><div class="BodyText footerTextBody">Gmail</div></a>
+                        </div>
+                        <div class="SubSections">
+                            <a target="_blank" href="https://www.facebook.com/menardtroy.fernandez.5/"><img src="images/homePics/FooterFacebookIcon.svg" /></a>
+                            <a target="_blank" href="https://www.facebook.com/menardtroy.fernandez.5/"><div class="BodyText footerTextBody">Facebook</div></a>
+                        </div>
+                        <div class="SubSections">
+                            <a target="_blank" href="https://github.com/Trill1um"><img src="images/homePics/FooterGitHubIcon.svg" /></a>
+                            <a target="_blank" href="https://github.com/Trill1um"><div class="BodyText footerTextBody">GitHub</div></a>
+                        </div>
+                        <div class="SubSections">
+                            <a target="_blank" href="https://t.me/illiumm"><img src="images/homePics/FooterTelegramIcon.svg" /></a>
+                            <a target="_blank" href="https://t.me/illiumm"><div class="BodyText footerTextBody">Telegram</div></a>
+                        </div>
+                        <div class="SubSections">
+                            <a target="_blank" href="https://discord.com/users/ilium404"><img src="images/homePics/FooterDiscordIcon.svg" /></a>
+                            <a target="_blank" href="https://discord.com/users/ilium404"><div class="BodyText footerTextBody">Discord</div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footerBacktoTopButton" onclick="scrollToTop()">
+            <img id="footerBackUpButtonImg" src="images/homePics/footerArrowButton.svg" />
+        </div>
+    </div>
+    <script src="scripts/contactMe.js"></script> 
+</body>
+</html>

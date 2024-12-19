@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/aboutMe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <script src="scripts/aboutMe.js"></script>
+    <div id="RectangleDesignBottom"></div>
+    <!-- Can't Fix clickScrolling (i.e., scroll when clicking an image) -->
+    <!-- <div class="circleDesign" id="cd1"></div>
+    <div class="circleDesign" id="cd2"></div>
+    <div class="circleDesign" id="cd3"></div>
+    <div class="circleDesign" id="cd4"></div> -->
+    <div id="TopSection">
+        <div id="NavigationSection">
+        <img id="TroyLogoNav" src="images/homePics/logoTroy.png" />
+        <div id="NavBar">
+            <a class="NavLink" href="index.html"><div >Home</div></a>
+            <a class="NavLink" id="NavLinkSelected"><div>About Me</div></a>
+            <a class="NavLink" href="S&I.html"><div>Skills &amp; Interests</div></a>
+            <a class="NavLink" href="SDG.html"><div>Education &amp; Me</div></a>
+            <a class="NavLink" href="ContactMe.html"><div>Contact Me</div></a>
+        </div>
+        </div>
+        <div id="HeroBannerSection">
+            <div id="bannerContent">
+                <p class="Heading1" id="bannerContentTitle">About <span class="BlueText">Me</span></p>
+                <p class="BodyHero" id="bannerContentSub">Who Am <span class="BlueText">I</span>? I Don't <span class="BlueText">Know</span>, You Tell <span class="BlueText">Me</span>.</p>
+            </div>
+        </div>
+    </div>
+    <div id="ThroughTheYearsSection">
+        <div id="ThroughTheYearsContent">
+            <div id="ThroughTheYearsText">
+                <div class="Subheading" id="ThroughTheYearsTextSub">Through the years</div>
+                <div class="Heading2" id="ThroughTheYearsTextTitle">5 Years Old</div>
+                <div class="BodyText customButton" id="ThroughTheYearsTextBody">
+                    If you’re wondering why the title is &quot;5 Years Old&quot; yet I have
+                    baby pictures here, it’s because this section covers the range from 0 to
+                    5 years old, a time I don’t remember much of. However, I do remember
+                    exploring the fields in Atimonan, Quezon. I’d get lost in the forest,
+                    play with animals, and turn anywhere into my playground. It was a time
+                    when my curiosity was at its peak. Though it saddens me that so much has
+                    changed since then. Some parts of the forest are now gone, the nearby
+                    hill is no longer a hill, the rice fields have been halved, and my
+                    family’s ownership may be revoked in the near future. How times have
+                    changed.
+            </div>
+            </div>
+            <div id="ThroughTheYearsImage">
+                <img id="ThroughTheYearsImagePic" src="images/aboutMePIcs/TTYimg1.png" />
+            </div>
+            <div id="ThroughTheYearsButtons">
+                <div id="upButtonBox"><img onclick="tTYUpButton()" id="upButton" src="images/aboutMEPics/upBottonPic.svg" /></div>
+                <div id="ThroughTheYearsSelectionButtons">
+                    <img id="tTYButton1" src="images/aboutMEPics/buttonSelected.svg" />
+                    <img id="tTYButton2" src="images/aboutMePIcs/buttonUnselected.svg" alt="">
+                    <img id="tTYButton3" src="images/aboutMePIcs/buttonUnselected.svg" alt="">
+                    <img id="tTYButton4" src="images/aboutMePIcs/buttonUnselected.svg" alt="">
+                    <img id="tTYButton5" src="images/aboutMePIcs/buttonUnselected.svg" alt="">
+                </div>
+                <div id="downButtonBox"><img onclick="tTYDownButton()" id="downButton" src="images/aboutMEPics/downBottonPic.svg" /></div>
+            </div>
+
+        </div>
+    </div>
+    <div id="RootsAndRoofsSection">
+        <div id="RaRContent">
+            <div id="RaRLabel" class="Subheading">Roots and roofs</div>
+            <div id="RaRDisplaySubSection">
+                <img class="RaRDisplaySubSectionImg" src="images/aboutMePIcs/RaRImg1.svg" />
+                <img class="RaRDisplaySubSectionImg" src="images/aboutMePIcs/RaRImg2.svg" />
+                <img class="RaRDisplaySubSectionImg" src="images/aboutMePIcs/RaRImg3.svg" />
+                <img class="RaRDisplaySubSectionImg" src="images/aboutMePIcs/RaRImg4.svg" />
+                <img class="RaRDisplaySubSectionImg" src="images/aboutMePIcs/RaRImg5.svg" />
+                <img class="RaRDisplaySubSectionImg" src="images/aboutMePIcs/RaRImg1.svg" />
+                <img class="RaRDisplaySubSectionImg" src="images/aboutMePIcs/RaRImg1.svg" />
+                <div id="RaRDisplaySubSectionText">
+                    <div class="BodyHero" id="RaRDisplaySubSectionTitle">Atimonan, Quezon (My First Home)</div>
+                    <div class="BodyText" id="RaRDisplaySubSectionBody">A place where I could find peace. Whenever I feel stressed or unease, I always feel the urge to return to where I came from—Atimonan, Quezon. Life was simple back then. Surrounded by nature, breathing fresh air, and having endless space to play. It’s a shame I couldn’t explore more as a kid. I can’t help but feel there are still mysteries waiting to be uncovered there.</div>
+                </div>
+            </div>
+
+            <div id="RaRDisplaySelectSubSection">
+                <img onclick="changeTo(0)" class="RaRDisplaySelectSubSectionImages" id="RaRDisplaySelectAtimonanImg" src="images/aboutMePIcs/atimonanMini.svg" />
+                <img onclick="changeTo(1)" class="RaRDisplaySelectSubSectionImages" id="RaRDisplaySelectMaubanImg" src="images/aboutMePIcs/maubanMini.svg" />
+                <img onclick="changeTo(2)" class="RaRDisplaySelectSubSectionImages" id="RaRDisplaySelectMaubanImg" src="images/aboutMePIcs/batangasMini.svg" />
+            </div>
+        </div>
+    </div>
+    <div id="MyFirstTeachearsSection">
+        <div class="MyFirstTeachearsSectionBg">
+            <div id="MFTSectionMomContent">
+                <div id="MFTSectionContentText">
+                    <div class="Subheading" id="MFTSectionContentTextLabel">My First Teachers</div>
+                    <div class="Heading2" id="MFTSectionContentTextTitle">A Silent Hero</div>
+                    <div class="BodyText" id="MFTSectionContentTextBody">I wouldn’t say I’m very close to my mom, and even less so with my dad, but I have a profound appreciation for everything she’s done for me. From the moment I was born to the day I moved out for college, she’s been there for me every step of the way. Her support hasn’t always been loud or obvious, but it’s always been present. In her own way, she’s shown that she believes in me and what I want to do with my life.</div>
+                </div>
+            <img class="MFTSectionContentImage" src="images/aboutMePIcs/momPic.svg" />    
+            </div>
+        </div>
+        <div class="MyFirstTeachearsSectionBg">
+            <div id="MFTSectionDadContent">
+                <img class="MFTSectionContentImage" src="images/aboutMePIcs/dadPic.svg" />    
+                <div id="MFTSectionContentText">
+                    <div class="Subheading" id="MFTSectionContentTextLabel">My First Teachers</div>
+                    <div class="Heading2" id="MFTSectionContentTextTitle">A Silent Powerhouse</div>
+                    <div class="BodyText" id="MFTSectionContentTextBody">Now, my dad wasn’t there with me for most of my life—not physically, at least. But in his own way, he’s always supported not just me but our whole family. He made the ultimate sacrifice by spending years away from us, working abroad to provide for us all. If it weren’t for his hard work and dedication, we wouldn’t be where we are today.</div>
+                </div>
+            </div>            
+        </div>
+
+    </div>
+    <div id="ThreeMusketeersSection">
+        <div id="ThreeMusketeersSectionContent">
+            <div id="TMSectionContentImageBox">
+                <div id="TMSectionImageCarousel">
+                    <img class="TMSectionImageCarouselItem" src="images/aboutMePIcs/TMPic1.png"/>
+                    <img class="TMSectionImageCarouselItem" src="images/aboutMePIcs/TMPic2.png"/>
+                    <img class="TMSectionImageCarouselItem" src="images/aboutMePIcs/TMPic3.png"/>
+                    <img class="TMSectionImageCarouselItem" src="images/aboutMePIcs/TMPic4.png"/>
+                </div>
+                <div id="TMSectionImageNav">
+                    <img id="TMSectionImageNavArrowLeft" src="images/aboutMePIcs/arrowLeft.svg" />
+                    <div id="TMSectionImageNavDots">
+                        <div class="TMSectionImageNavDots"></div>
+                        <div class="TMSectionImageNavDots"></div>
+                        <div class="TMSectionImageNavDots"></div>
+                        <div class="TMSectionImageNavDots"></div>
+                    </div>
+                    <img id="TMSectionImageNavArrowRight" src="images/aboutMePIcs/arrowRight.svg" />
+                </div>
+            </div>
+            <div id="TMSectionContentText">
+                <div class="Subheading" id="TMSectionContentTextSub">Three musketeers</div>
+                <div class="Heading2" id="TMSectionContentTextTitle">Me &amp; my Bros</div>
+                <div class="BodyText" id="TMSectionContentTextBody">Originally, we weren’t on good terms with each other. Someone was always crying, getting hurt, or even seeking revenge—even if the cause was just an accident. But I guess kids will be kids because now, we have a normal relationship. We help each other, share banter, and even teach one another. While our relationship isn’t perfect, it’s far stronger than before, built on mutual understanding and the lessons we’ve learned from all those childhood squabbles.</div>
+            </div>
+        </div>
+
+    </div>
+    <div id="FooterSection">
+        <div id="footerContent">
+            <img id="troyLogo2" src="images/homePics/troyLogo2.png" />
+            <div id="footerTexts">
+                <div class="footerTextsSections" id="footerTextsSitemap">
+                    <div class="BodyHero BlueText SubSectionsLabel" id="siteMapLabel">Site Map</div>
+                    <div class="BodyText footerTextsBodyBox">
+                        <div onclick="window.location.href='index.html'" class="SubSections" id="siteMapHome">Home</div>
+                        <div class="SubSections" id="siteMapAboutMe">About Me</div>
+                        <div onclick="window.location.href='S&I.html'" class="SubSections" id="siteMaSI">Skills &amp; Interests</div>
+                        <div onclick="window.location.href='SDG.html'" class="SubSections" id="siteMapEducationMe">Education &amp; Me</div>
+                        <div onclick="window.location.href='ContactMe.html'" class="SubSections" id="siteMapContactMe">Contact Me</div>
+                    </div>
+                    
+                </div>
+                <div class="footerTextsSections" id="footerTextsAboutme">
+                    <div class="BodyHero BlueText SubSectionsLabel" id="aboutMeLabel">About Me</div>
+                    <div class="BodyText footerTextBody">
+                        Troy—A Jack of All Trades, Master of None
+                    </div>
+                </div>
+                <div class="footerTextsSections" id="footerTextsContact">
+                    <div class="BodyHero BlueText SubSectionsLabel" id="contactLabel">Contact</div>
+                    <div class="footerTextsBodyBox">
+                        <div class="SubSections">
+                            <a target="_blank" href="mailto:menardtroyf@gmail.com"><img src="images/homePics/FooterGoogleIcon.svg" /></a>
+                            <a target="_blank" href="mailto:menardtroyf@gmail.com"><div class="BodyText footerTextBody">Gmail</div></a>
+                        </div>
+                        <div class="SubSections">
+                            <a target="_blank" href="https://www.facebook.com/menardtroy.fernandez.5/"><img src="images/homePics/FooterFacebookIcon.svg" /></a>
+                            <a target="_blank" href="https://www.facebook.com/menardtroy.fernandez.5/"><div class="BodyText footerTextBody">Facebook</div></a>
+                        </div>
+                        <div class="SubSections">
+                            <a target="_blank" href="https://github.com/Trill1um"><img src="images/homePics/FooterGitHubIcon.svg" /></a>
+                            <a target="_blank" href="https://github.com/Trill1um"><div class="BodyText footerTextBody">GitHub</div></a>
+                        </div>
+                        <div class="SubSections">
+                            <a target="_blank" href="https://t.me/illiumm"><img src="images/homePics/FooterTelegramIcon.svg" /></a>
+                            <a target="_blank" href="https://t.me/illiumm"><div class="BodyText footerTextBody">Telegram</div></a>
+                        </div>
+                        <div class="SubSections">
+                            <a target="_blank" href="https://discord.com/users/ilium404"><img src="images/homePics/FooterDiscordIcon.svg" /></a>
+                            <a target="_blank" href="https://discord.com/users/ilium404"><div class="BodyText footerTextBody">Discord</div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footerBacktoTopButton" onclick="scrollToTop()">
+            <img id="footerBackUpButtonImg" src="images/homePics/footerArrowButton.svg" />
+        </div>
+    </div>
+</body>
+</html>
